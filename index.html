@@ -1,39 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="kalkulator/css.css">
-
-</head>
-<body>
-
-
+    <link rel="stylesheet" href="kalkulator/css.css" />
+  </head>
+  <body>
     <h1 id="calculator">Kalkulator dla pajacy</h1>
     <div id="wpisane">
-    <input type="number" id="input"/>
+      <input type="number" id="input" />
     </div>
     <div id="przyciski">
-    <button type="button" id="add" >+</button>
-    <button type="button" id="subtract" >-</button>
-    <button type="button" id="multiply" >*</button>
-    <button type="button" id="divide" >/</button>
+      <button type="button" id="add">+</button>
+      <button type="button" id="subtract">-</button>
+      <button type="button" id="multiply">*</button>
+      <button type="button" id="divide">/</button>
+    
     </div>
-    
-    
-    <h2 id="wynik">
-        Wynik: <span id="result">0</span>
-    </h2>
+    <div id="przyciskRównania">
+    <button type="button" id="wynik">=</button>
+    </div>
+
+    <h2 id="wynik">Wynik: <span id="result">0</span></h2>
 
     <div id="resetowanie">
-
-            <button type="button" id="zerowanie">Reset</button>
+      <button type="button" id="zerowanie">Reset</button>
     </div>
 
-
-        <script src="kalkulator/script.js"></script>
-        <script src="kalkulator/script2.js"></script>
-</body>
+    <script src="kalkulator/script.js"></script>
+    <script src="kalkulator/script2.js"></script>
+  </body>
 </html>

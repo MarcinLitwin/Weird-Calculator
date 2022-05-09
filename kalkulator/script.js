@@ -3,6 +3,7 @@ const numberAdd = document.getElementById('add')
 const numberSubstract = document.getElementById('subtract')
 const numberMultiply = document.getElementById('multiply')
 const numberDivide = document.getElementById('divide')
+const wynikRownania = document.getElementById('wynik')
 
 const resultOutput = document.getElementById('result')
 
