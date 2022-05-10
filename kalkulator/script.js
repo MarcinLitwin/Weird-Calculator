@@ -7,6 +7,7 @@ const wynikRownania = document.getElementById('rownaSie');
 const numberPotega = document.getElementById('potega');
 const numberPotegaX = document.getElementById('potegax');
 const numberPierwiastek = document.getElementById('pierwiastek')
+const numberPierwiastekX = document.getElementById('pierwiastekX')
 
 const resultOutput = document.getElementById('result');
 
@@ -33,7 +34,15 @@ document.addEventListener(
       multiply();
     } else if (name == '=') {
       naszWynik();
-    } else {
+    } 
+    else if (name == "r"){
+      pierwiastkowanieX()
+    }
+    else if (name == "p"){
+      potegowanieX()
+    }
+    
+    else {
       return;
     }
   },

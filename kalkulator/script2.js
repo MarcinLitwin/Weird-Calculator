@@ -81,6 +81,13 @@ function potegowanieX() {
   document.getElementById('input').value = '';
   czyPotegaX = '1';
 }
+function pierwiastkowanieX() {
+  const podaneLiczby = getUserInput();
+  wynik = podaneLiczby;
+  currentResultOutput(wynik);
+  document.getElementById('input').value = '';
+  czyPotegaX = '2';
+}
 
 function pierwiastkowanie() {
   const podaneLiczby = getUserInput();
@@ -118,6 +125,11 @@ function naszWynik() {
     currentResultOutput(wynik);
     document.getElementById('input').value = '';
   }
+  else if (czyPotegaX == '2') {
+    wynik = Math.pow(wynik, 1/podaneLiczby);
+    currentResultOutput(wynik);
+    document.getElementById('input').value = '';
+  }
 }
 
 wynikRownania.addEventListener('click', naszWynik);
@@ -129,3 +141,4 @@ numberReset.addEventListener('click', reset);
 numberPotega.addEventListener('click', potegowanie);
 numberPotegaX.addEventListener('click', potegowanieX);
 numberPierwiastek.addEventListener('click',pierwiastkowanie)
+numberPierwiastekX.addEventListener('click',pierwiastkowanieX)
