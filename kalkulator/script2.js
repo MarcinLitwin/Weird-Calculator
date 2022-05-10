@@ -2,7 +2,8 @@ const wynikPoczatkowy = 0;
 let wynik = wynikPoczatkowy;
 const logEntries = 0;
 let poprzednieDzialanie = logEntries;
-
+const czyPotega = 0;
+let czyPotegaX = czyPotega;
 function getUserInput() {
   return parseInt(userInput.value);
 }
@@ -73,6 +74,19 @@ function reset() {
   poprzednieDzialanie = ' ';
 }
 
+function potegowanieX(){
+  const podaneLiczby = getUserInput();
+  wynik = podaneLiczby;
+  currentResultOutput(wynik);
+  document.getElementById('input').value = '';
+  czyPotegaX = "1"
+
+}
+
+function ilePoteg(){
+  
+}
+
 function naszWynik() {
   const podaneLiczby = getUserInput();
   let dzialanie = poprzednieDzialanie;
@@ -104,8 +118,11 @@ function naszWynik() {
     logEntries = ' ';
 
 
-  } else {
-    return;
+  } else if (czyPotegaX =="1"){
+    wynik = wynik ** podaneLiczby
+    currentResultOutput(wynik);
+    document.getElementById('input').value = '';
+    
   }
 
 }
@@ -117,3 +134,4 @@ numberMultiply.addEventListener('click', multiply);
 numberDivide.addEventListener('click', divide);
 numberReset.addEventListener('click', reset);
 numberPotega.addEventListener('click', potegowanie)
+numberPotegaX.addEventListener('click',potegowanieX)

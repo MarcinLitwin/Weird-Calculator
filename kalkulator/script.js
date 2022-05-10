@@ -5,6 +5,7 @@ const numberMultiply = document.getElementById('multiply');
 const numberDivide = document.getElementById('divide');
 const wynikRownania = document.getElementById('rownaSie');
 const numberPotega = document.getElementById('potega')
+const numberPotegaX = document.getElementById('potegax')
 
 const resultOutput = document.getElementById('result');
 
