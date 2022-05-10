@@ -1,78 +1,77 @@
 html {
-    font-family: monospace;
-    background-color: antiquewhite;
+  font-family: monospace;
+  background-color: antiquewhite;
 }
 
 #calculator {
-    text-align: center;
-    color: dodgerblue;
-    font-size: 60px;
-
+  text-align: center;
+  color: dodgerblue;
+  font-size: 60px;
 }
 
 #obliczenia {
-    text-align: center;
-    color: slateblue;
+  text-align: center;
+  color: slateblue;
 }
 
-#wynik{
-    text-align: center;
-    color: rgb(120, 74, 195);
-    font-size: 45px;
+#wynik {
+  text-align: center;
+  color: rgb(120, 74, 195);
+  font-size: 45px;
 }
-button{
-    background-color: aquamarine;
-    height: 40px;
-    width: 40px;
-    text-align: center;
-}
-
-input{
-    width: 200px;
-    height: 50px;
-    font-size: 45px;
-}
-#przyciski{
-    text-align: center;
-    margin: 20px;
-    align-items: center;
+button {
+  background-color: aquamarine;
+  height: 40px;
+  width: 40px;
+  text-align: center;
 }
 
-#wpisane{
-    text-align: center;
-    margin: 20px;
+input {
+  width: 200px;
+  height: 50px;
+  font-size: 45px;
+}
+#przyciski {
+  text-align: center;
+  margin: 20px;
+  align-items: center;
 }
 
-#result{
-    color: red;
-    font-size: 60px;
-    margin:30px;
+#wpisane {
+  text-align: center;
+  margin: 20px;
 }
 
-#reset{
-    text-align: center;
-    margin :40px;
+#result {
+  color: red;
+  font-size: 60px;
+  margin: 30px;
 }
 
-#zerowanie{
-    font-size: 30px;
-    height: auto;
-    width: auto;    
+#reset {
+  text-align: center;
+  margin: 40px;
 }
 
-#resetowanie{
-    text-align: center;
-    margin: 20px;
-}
-#zerowanie{
-    font-size: 40px;
+#zerowanie {
+  font-size: 30px;
+  height: auto;
+  width: auto;
 }
 
-#przyciskRównania{
-    text-align: center;
+#resetowanie {
+  text-align: center;
+  margin: 20px;
 }
-#wynik{
-    text-align: center;
-    margin: 10px;
-    align-content: center;
+#zerowanie {
+  font-size: 40px;
+}
+
+#przyciskRównania {
+  text-align: center;
+}
+#rownaSie {
+  text-align: center;
+  margin: 10px;
+
 }
