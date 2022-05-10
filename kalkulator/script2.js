@@ -58,6 +58,14 @@ function divide() {
   }
 }
 
+function potegowanie(){
+  const podaneLiczby = getUserInput();
+  wynik = podaneLiczby * podaneLiczby;
+  currentResultOutput(wynik);
+  document.getElementById('input').value = '';
+  //poprzednieDzialanie = 'potega';
+}
+
 function reset() {
   const nowyWynik = 0;
   wynik = nowyWynik;
@@ -71,21 +79,35 @@ function naszWynik() {
   if (dzialanie == '+') {
     wynik = podaneLiczby + wynik;
     currentResultOutput(wynik);
+    document.getElementById('input').value = '';
+    logEntries = ' ';
+
+
   } else if (dzialanie == '-') {
     wynik = wynik - podaneLiczby;
     currentResultOutput(wynik);
+    document.getElementById('input').value = '';
+    logEntries = ' ';
+
+
   } else if (dzialanie == '*') {
     wynik = podaneLiczby * wynik;
     currentResultOutput(wynik);
+    document.getElementById('input').value = '';
+    logEntries = ' ';
+
+
   } else if (dzialanie == '/') {
     wynik = wynik / podaneLiczby;
     currentResultOutput(wynik);
+    document.getElementById('input').value = '';
+    logEntries = ' ';
+
+
   } else {
     return;
   }
 
-  logEntries = ' ';
-  document.getElementById('input').value = '';
 }
 
 wynikRownania.addEventListener('click', naszWynik);
@@ -94,3 +116,4 @@ numberSubstract.addEventListener('click', subtract);
 numberMultiply.addEventListener('click', multiply);
 numberDivide.addEventListener('click', divide);
 numberReset.addEventListener('click', reset);
+numberPotega.addEventListener('click', potegowanie)

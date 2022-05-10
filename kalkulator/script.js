@@ -4,6 +4,7 @@ const numberSubstract = document.getElementById('subtract');
 const numberMultiply = document.getElementById('multiply');
 const numberDivide = document.getElementById('divide');
 const wynikRownania = document.getElementById('rownaSie');
+const numberPotega = document.getElementById('potega')
 
 const resultOutput = document.getElementById('result');
 
@@ -29,6 +30,9 @@ document.addEventListener('keypress', (event) => {
   }
   else if (name == "*"){
     multiply()
+  }
+  else if(name =="="){
+    naszWynik()
   }
   else{
     return
