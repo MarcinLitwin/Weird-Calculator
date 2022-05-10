@@ -59,7 +59,7 @@ function divide() {
   }
 }
 
-function potegowanie(){
+function potegowanie() {
   const podaneLiczby = getUserInput();
   wynik = podaneLiczby * podaneLiczby;
   currentResultOutput(wynik);
@@ -74,18 +74,15 @@ function reset() {
   poprzednieDzialanie = ' ';
 }
 
-function potegowanieX(){
+function potegowanieX() {
   const podaneLiczby = getUserInput();
   wynik = podaneLiczby;
   currentResultOutput(wynik);
   document.getElementById('input').value = '';
-  czyPotegaX = "1"
-
+  czyPotegaX = '1';
 }
 
-function ilePoteg(){
-  
-}
+function ilePoteg() {}
 
 function naszWynik() {
   const podaneLiczby = getUserInput();
@@ -95,36 +92,26 @@ function naszWynik() {
     currentResultOutput(wynik);
     document.getElementById('input').value = '';
     logEntries = ' ';
-
-
   } else if (dzialanie == '-') {
     wynik = wynik - podaneLiczby;
     currentResultOutput(wynik);
     document.getElementById('input').value = '';
     logEntries = ' ';
-
-
   } else if (dzialanie == '*') {
     wynik = podaneLiczby * wynik;
     currentResultOutput(wynik);
     document.getElementById('input').value = '';
     logEntries = ' ';
-
-
   } else if (dzialanie == '/') {
     wynik = wynik / podaneLiczby;
     currentResultOutput(wynik);
     document.getElementById('input').value = '';
     logEntries = ' ';
-
-
-  } else if (czyPotegaX =="1"){
-    wynik = wynik ** podaneLiczby
+  } else if (czyPotegaX == '1') {
+    wynik = wynik ** podaneLiczby;
     currentResultOutput(wynik);
     document.getElementById('input').value = '';
-    
   }
-
 }
 
 wynikRownania.addEventListener('click', naszWynik);
@@ -133,5 +120,5 @@ numberSubstract.addEventListener('click', subtract);
 numberMultiply.addEventListener('click', multiply);
 numberDivide.addEventListener('click', divide);
 numberReset.addEventListener('click', reset);
-numberPotega.addEventListener('click', potegowanie)
-numberPotegaX.addEventListener('click',potegowanieX)
+numberPotega.addEventListener('click', potegowanie);
+numberPotegaX.addEventListener('click', potegowanieX);
