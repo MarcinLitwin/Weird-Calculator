@@ -6,6 +6,7 @@ const numberDivide = document.getElementById('divide');
 const wynikRownania = document.getElementById('rownaSie');
 const numberPotega = document.getElementById('potega');
 const numberPotegaX = document.getElementById('potegax');
+const numberPierwiastek = document.getElementById('pierwiastek')
 
 const resultOutput = document.getElementById('result');
 

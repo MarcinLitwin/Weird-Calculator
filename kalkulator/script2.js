@@ -82,7 +82,13 @@ function potegowanieX() {
   czyPotegaX = '1';
 }
 
-function ilePoteg() {}
+function pierwiastkowanie() {
+  const podaneLiczby = getUserInput();
+  wynik = Math.sqrt(podaneLiczby);
+  currentResultOutput(wynik);
+  document.getElementById('input').value = '';
+
+}
 
 function naszWynik() {
   const podaneLiczby = getUserInput();
@@ -122,3 +128,4 @@ numberDivide.addEventListener('click', divide);
 numberReset.addEventListener('click', reset);
 numberPotega.addEventListener('click', potegowanie);
 numberPotegaX.addEventListener('click', potegowanieX);
+numberPierwiastek.addEventListener('click',pierwiastkowanie)
