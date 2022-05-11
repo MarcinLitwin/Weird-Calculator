@@ -9,6 +9,9 @@ const numberPotegaX = document.getElementById('potegax');
 const numberPierwiastek = document.getElementById('pierwiastek')
 const numberPierwiastekX = document.getElementById('pierwiastekX')
 
+
+
+
 const resultOutput = document.getElementById('result');
 
 const numberReset = document.getElementById('zerowanie');
@@ -27,7 +30,7 @@ function currentInputOutput(input2) {
       
       var strInt = []
       let doLiczenia = 0;
-
+  let input2
 document.addEventListener(
   'keypress',
   (event) => {
@@ -53,7 +56,7 @@ document.addEventListener(
       potegowanieX()
     }
     else if (name >= "0" && name<="9"){
-      let input2 = name
+       input2 = name
       strInt.push(`${input2}`)
       var zmniejszone = strInt.join("")
       //strInt.toString()
