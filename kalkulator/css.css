@@ -1,3 +1,4 @@
+
 html {
   font-family: monospace;
   background-color: antiquewhite;
@@ -73,4 +74,23 @@ input {
 #rownaSie {
   text-align: center;
   margin: 10px;
+}
+table{
+  background-color: brown;
+  margin-left: auto;
+  margin-right: auto;
+}
+#przyciski{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#wpisane{
+  font-family: 'Orbitron', sans-serif;
+    text-align: center;
+  color: black;
+  font-size: 60px;
+
+
+
 }

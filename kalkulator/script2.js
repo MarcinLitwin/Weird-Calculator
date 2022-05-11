@@ -75,6 +75,10 @@ function reset() {
   wynik = nowyWynik;
   currentResultOutput(nowyWynik);
   poprzednieDzialanie = ' ';
+  usuwanieWyniku();
+  czyPotegaX = '0';
+
+
 }
 
 function potegowanieX() {
