@@ -1,3 +1,4 @@
+
 html {
   font-family: monospace;
   background-color: antiquewhite;
@@ -16,8 +17,9 @@ html {
 
 #wynik {
   text-align: center;
-  color: rgb(120, 74, 195);
+  color: black;
   font-size: 45px;
+  margin-bottom: 0%;
 }
 button {
   background-color: aquamarine;
@@ -43,11 +45,29 @@ input {
 }
 
 #result {
+  font-family: 'Orbitron', sans-serif;
   color: red;
   font-size: 60px;
   margin: 30px;
+  margin-right: 0%;
+  background-color: black;
+  color: white;
+  
+  
 }
 
+#tabelaWyniku{
+  margin-top: 10px;
+  margin-left: 30%;
+margin-right: 30%;
+background-color: black;
+text-align: right;
+}
+
+#input2{
+  background-color: black;
+}
+/*
 #reset {
   text-align: center;
   margin: 40px;
@@ -63,14 +83,47 @@ input {
   text-align: center;
   margin: 20px;
 }
+*/
 #zerowanie {
-  font-size: 40px;
+  background-color: red;
 }
 
 #przyciskRównania {
   text-align: center;
 }
+#rownaSie{
+  background-color: yellow;
+}
+/*
 #rownaSie {
   text-align: center;
   margin: 10px;
+}
+*/
+table{
+  background-color: gray;
+  margin-left: auto;
+  margin-right: auto;
+}
+#przyciski{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#wpisane{
+  font-family: 'Orbitron', sans-serif;
+    text-align: right;
+  color: black;
+  font-size: 60px;
+background-color: black;
+color: white;
+margin-left: 30%;
+margin-right: 30%;
+
+
+}
+table,th,td
+{
+  border:2px solid ;
+  border-spacing: 20px;
 }

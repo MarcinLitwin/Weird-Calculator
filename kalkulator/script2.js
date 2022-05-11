@@ -4,16 +4,21 @@ const logEntries = 0;
 let poprzednieDzialanie = logEntries;
 const czyPotega = 0;
 let czyPotegaX = czyPotega;
-function getUserInput() {
+/*function getUserInput() {
   return parseInt(userInput.value);
 }
+*/
 
+function usuwanieWyniku(){
+  currentInputOutput(0);
+  strInt = []
+}
 function add() {
   const podaneLiczby = getUserInput();
   wynik = podaneLiczby + wynik;
   currentResultOutput(wynik);
-  document.getElementById('input').value = '';
-  poprzednieDzialanie = '+';
+  usuwanieWyniku();
+    poprzednieDzialanie = '+';
 }
 
 function subtract() {
@@ -21,8 +26,7 @@ function subtract() {
   wynik = wynik - podaneLiczby;
   currentResultOutput(wynik);
   poprzednieDzialanie = '-';
-  document.getElementById('input').value = '';
-}
+  usuwanieWyniku()}
 
 function multiply() {
   const podaneLiczby = getUserInput();
@@ -32,13 +36,12 @@ function multiply() {
     wynik = podaneLiczby;
     currentResultOutput(wynik);
     poprzednieDzialanie = '*';
-    document.getElementById('input').value = '';
-  } else {
+    usuwanieWyniku();
+    } else {
     wynik = podaneLiczby * wynik;
     currentResultOutput(wynik);
     poprzednieDzialanie = '*';
-    document.getElementById('input').value = '';
-  }
+    usuwanieWyniku();  }
 }
 
 function divide() {
@@ -50,21 +53,21 @@ function divide() {
     wynik = podaneLiczby;
     currentResultOutput(wynik);
     poprzednieDzialanie = '/';
-    document.getElementById('input').value = '';
-  } else {
+    usuwanieWyniku();
+    } else {
     wynik = wynik / podaneLiczby;
     currentResultOutput(wynik);
     poprzednieDzialanie = '/';
-    document.getElementById('input').value = '';
-  }
+    usuwanieWyniku();
+    }
 }
 
 function potegowanie() {
   const podaneLiczby = getUserInput();
   wynik = podaneLiczby * podaneLiczby;
   currentResultOutput(wynik);
-  document.getElementById('input').value = '';
-  //poprzednieDzialanie = 'potega';
+  usuwanieWyniku();
+    //poprzednieDzialanie = 'potega';
 }
 
 function reset() {
@@ -72,28 +75,32 @@ function reset() {
   wynik = nowyWynik;
   currentResultOutput(nowyWynik);
   poprzednieDzialanie = ' ';
+  usuwanieWyniku();
+  czyPotegaX = '0';
+
+
 }
 
 function potegowanieX() {
   const podaneLiczby = getUserInput();
   wynik = podaneLiczby;
   currentResultOutput(wynik);
-  document.getElementById('input').value = '';
-  czyPotegaX = '1';
+  usuwanieWyniku();
+    czyPotegaX = '1';
 }
 function pierwiastkowanieX() {
   const podaneLiczby = getUserInput();
   wynik = podaneLiczby;
   currentResultOutput(wynik);
-  document.getElementById('input').value = '';
-  czyPotegaX = '2';
+  usuwanieWyniku();
+    czyPotegaX = '2';
 }
 
 function pierwiastkowanie() {
   const podaneLiczby = getUserInput();
   wynik = Math.sqrt(podaneLiczby);
   currentResultOutput(wynik);
-  document.getElementById('input').value = '';
+  usuwanieWyniku();
 
 }
 
@@ -103,33 +110,41 @@ function naszWynik() {
   if (dzialanie == '+') {
     wynik = podaneLiczby + wynik;
     currentResultOutput(wynik);
-    document.getElementById('input').value = '';
+usuwanieWyniku();
     logEntries = ' ';
+    poprzednieDzialanie = ' ';
   } else if (dzialanie == '-') {
     wynik = wynik - podaneLiczby;
     currentResultOutput(wynik);
-    document.getElementById('input').value = '';
-    logEntries = ' ';
+    usuwanieWyniku();
+        logEntries = ' ';
+        poprzednieDzialanie = ' ';
   } else if (dzialanie == '*') {
     wynik = podaneLiczby * wynik;
     currentResultOutput(wynik);
-    document.getElementById('input').value = '';
-    logEntries = ' ';
+    usuwanieWyniku();
+        logEntries = ' ';
   } else if (dzialanie == '/') {
     wynik = wynik / podaneLiczby;
     currentResultOutput(wynik);
-    document.getElementById('input').value = '';
-    logEntries = ' ';
+    usuwanieWyniku();
+    poprzednieDzialanie = ' ';
+        logEntries = ' ';
   } else if (czyPotegaX == '1') {
     wynik = wynik ** podaneLiczby;
     currentResultOutput(wynik);
-    document.getElementById('input').value = '';
-  }
+    usuwanieWyniku();
+    poprzednieDzialanie = ' ';
+    czyPotegaX = '0';
+
+    }
   else if (czyPotegaX == '2') {
     wynik = Math.pow(wynik, 1/podaneLiczby);
     currentResultOutput(wynik);
-    document.getElementById('input').value = '';
-  }
+    usuwanieWyniku();
+    poprzednieDzialanie = ' ';
+    czyPotegaX = '0';
+    }
 }
 
 wynikRownania.addEventListener('click', naszWynik);

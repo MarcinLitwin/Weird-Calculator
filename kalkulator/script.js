@@ -1,4 +1,4 @@
-const userInput = document.getElementById('input');
+//const userInput = document.getElementById('input');
 const numberAdd = document.getElementById('add');
 const numberSubstract = document.getElementById('subtract');
 const numberMultiply = document.getElementById('multiply');
@@ -9,14 +9,28 @@ const numberPotegaX = document.getElementById('potegax');
 const numberPierwiastek = document.getElementById('pierwiastek')
 const numberPierwiastekX = document.getElementById('pierwiastekX')
 
+
+
+
 const resultOutput = document.getElementById('result');
 
 const numberReset = document.getElementById('zerowanie');
+
+const ourInput = document.getElementById('input2')
+
 
 function currentResultOutput(result) {
   resultOutput.textContent = result;
 }
 
+function currentInputOutput(input2) {
+  ourInput.textContent = input2;
+}
+
+      
+      var strInt = []
+      let doLiczenia = 0;
+  let input2
 document.addEventListener(
   'keypress',
   (event) => {
@@ -41,10 +55,25 @@ document.addEventListener(
     else if (name == "p"){
       potegowanieX()
     }
-    
+    else if (name >= "0" && name<="9"){
+       input2 = name
+      strInt.push(`${input2}`)
+      var zmniejszone = strInt.join("")
+      //strInt.toString()
+      currentInputOutput(`${zmniejszone}`)
+      doLiczenia = zmniejszone
+
+    }
     else {
       return;
     }
+    
+  
   },
   false
 );
+
+function getUserInput(){
+  return parseInt(doLiczenia);
+
+}
