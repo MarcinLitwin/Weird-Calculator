@@ -8,15 +8,19 @@
     <link rel="stylesheet" href="kalkulator/css.css" />
   </head>
   <body>
-    <h1 id="calculator">Kalkulator dla pajacy</h1>
+    <h1 id="calculator">Kalkulator</h1>
     <div id="wpisane">
-      <input
+      <!---
+        <input
         type="number"
         ondrop="return false;"
         onpaste="return false;"
         onkeypress="return event.charCode>=48 && event.charCode<=57"
         id="input"
+        
       />
+      -->
+      <span id="input2">0</span>
     </div>
     <div id="przyciski">
       <button type="button" id="add">+</button>
